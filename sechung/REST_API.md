@@ -36,10 +36,11 @@
 # REST API
 ### 정의
 - REST 아키텍처 스타일을 따르는 API
+- 목적은 URL을 통해 의도를 명확하게 전달하고, 리소스를 조작하는 것이다.
 
 ### 구현
 - HTTP 요청을 통해 리소스 내에서 CRUD 작업을 수행하는 것으로 구현된다.
-- GET, POST, PUT, DELETE 메소드와 URL을 통해 리소스를 조작한다.
+- 일반적으로 GET, POST, PUT, DELETE 메소드와 URL을 통해 리소스를 조작한다.
 
 # RESTful?
 ### 정의
