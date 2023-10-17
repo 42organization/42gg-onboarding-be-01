@@ -51,13 +51,40 @@ HTTP란
 =====
 
 - HTML 문서와 같은 리소스들을 가져올 수 있도록 해주는 프로토콜
-- HTML, TEXT
-- IMAGE, 음성, 영상, 파일
-- JSON, XML (API)
+- HTML, TEXT, IMAGE, 음성, 영상, 파일, JSON, XML (API) 등
 - 거의 모든 형태의 데이터 전송 가능
 - 서버간에 데이터를 주고 받을 때도 대부분 HTTP 사용
 
-HTTP 메시지
+## HTTP 역사
+
+HTTP/0.9 1991년: GET 메서드만 지원, 헤더 X  
+HTTP/1.0 1996년: 메서드, 헤더 추가  
+HTTP/1.1 1997년: 가장 많이 사용, 우리에게 가장 중요한 버전 (파이프라이닝, keep alive)  
+HTTP/2 2015년: multiplexing 등 성능 개선  
+HTTP/3 진행중: TCP 대신 UDP 사용, 성능 개선  
+
+## HTTP의 특징
+1. 무상태성(stateless)  
+   서버는 클라이언트의 상태를 보존하지 않는다.  
+   따라서 요청을 할때 모든 데이터를 넣어서 보내줘야함  
+   하지만 로그인 등 사용자의 정보가 필요한 경우에는 상태를 보존해줘야함
+   이럴때는 쿠키, 서버 세션, 토큰 등을 이용해 상태를 유지한다.
+   
+3. 비연결성  
+   기본적인 TCP/IP는 한번 연결하면 계속 연결상태로 데이터를 주고받지만 HTTP는 연결을 끊어버린다.  
+   트래픽이 많은 경우 매번 HandShake를 해야하는것에 문제가 생김  
+   이를 해결하기 위해 지속연결을 할 수 있게 해줌.
+
+### HTTP 지속연결
+
+<img width="500" alt="image" src="https://github.com/42organization/42gg-onboarding-be-01/assets/105098279/9fec708d-bad3-4121-922d-d10bf48bcea3">
+
+<img width="500" alt="image" src="https://github.com/42organization/42gg-onboarding-be-01/assets/105098279/287b7dbd-9bf7-4d19-9276-0deeacbe0f88">
+
+
+
+
+## HTTP 메시지
 
 <img width="500" alt="image" src="https://github.com/kokomong2/42gg-onboarding-be-01/assets/105098279/cf851c6e-b504-49ae-a8bd-4a0e2385e2ec">
 
@@ -79,7 +106,8 @@ HTTP/1.1 200 OK
 1. HTTP 버전
 2. HTTP 상태 코드: 요청 성공, 실패를 나타냄
    
-• 200: 성공  
+• 200: 성공 
+• 300: 리다이렉션
 • 400: 클라이언트 요청 오류  
 • 500: 서버 내부 오류  
 
