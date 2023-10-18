@@ -2,7 +2,9 @@
 
 ## MVC 패턴이란?
 
-![스크린샷 2023-10-13 오후 8.14.08.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/9b91d789-aac7-4d5b-b74e-021d07e92360/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.14.08.png)
+<img width="334" alt="6" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/bb321806-b160-4a4b-b21b-12c8956a0f7d">
+
+
 
 - 모델-뷰-컨트롤러(model–view–controller, MVC)는 소프트웨어 공학에서 사용되는 소프트웨어 디자인 패턴이다.
 - `디자인 패턴`
@@ -53,7 +55,8 @@
 
 ## MVC 모델 1
 
-![스크린샷 2023-10-18 오전 9.50.48.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/78d5c602-7e52-48b0-8113-9d197ab9e1b8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-18_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_9.50.48.png)
+<img width="621" alt="7" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/bfba8581-e444-4744-9a9a-b4e587667d81">
+
 
 - MVC 모델 1은 **뷰와 컨트롤러의 역할이 합쳐져 있다.**
 - 흔히 웹 개발을 하면 Jsp가 뷰 역할을 하는데, MVC 1에서 Jsp는 뷰와 컨트롤러의 역할을 모두 감당한다.
@@ -65,7 +68,9 @@
 
 ## MVC 모델 2
 
-![스크린샷 2023-10-18 오전 9.53.34.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/3b67b669-c286-47b8-b907-d79cc6370816/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-18_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_9.53.34.png)
+
+<img width="621" alt="8" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/4d9da7b3-0715-4686-8c0e-72ef7f1d47af">
+
 
 - MVC 1에서 유지보수가 힘들다는 단점을 보완하기 위해 나온 모델
 - JSP는 뷰의 역할만 하게 하고, 대신 컨트롤러 역할을 Servlet이 수행한다.
