@@ -103,21 +103,24 @@
 
 JWT는 **헤더(header)**, **페이로드(payload)**, **서명(signature)** 세 파트로 나눠져 있으며, 아래와 같은 형태로 구성되어 있다.
 
-![스크린샷 2023-10-13 오후 2.42.28.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/4c2718a3-72d7-4ce6-bd0f-e4ca2d6b9420/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.42.28.png)
+<img width="609" alt="1" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/b70ae490-1550-4dd9-bffa-d048a9354daa">
+
 
 ### 헤더 (Header)
 
 > 토큰의 타입 / 서명 생성에 사용되는 알고리즘의 정보 포함
 > 
 
-![스크린샷 2023-10-13 오후 2.43.36.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/80cf7c51-8ffc-42b3-a64c-074085d842a2/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.43.36.png)
+<img width="323" alt="2" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/10f04d9f-e45d-4b1f-8c8f-36ed31c2733a">
+
 
 ### 정보 (Payload)
 
 > 전달하려는 정보(사용자 id나 다른 데이터들 == 클레임) 포함
 > 
 
-![스크린샷 2023-10-13 오후 2.45.40.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/55b1e242-f2f9-49c3-8ca9-ffe21b0cb9f3/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.45.40.png)
+<img width="332" alt="3" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/7a835c90-66a9-4019-be46-7f131ad9c1c0">
+
 
 - Claim의 표준 스펙 (꼭 포함되어야 하는 것 X)
     1. iss(Issuer): 토큰 발급자
@@ -131,7 +134,9 @@ JWT는 **헤더(header)**, **페이로드(payload)**, **서명(signature)** 
 
 ### 서명 (Signature)
 
-![스크린샷 2023-10-13 오후 3.40.12.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/8e879636-7fc0-401b-872e-6e0825c25545/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.40.12.png)
+
+<img width="431" alt="4" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/4763ca8e-2323-40ec-a024-cfc87bb6ef1a">
+
 
 > 가장 중요한 부분으로 헤더와 정보를 합친 후 발급해준 서버가 지정한 **secret key로 암호화시켜 토큰을 변조하기 어렵게 만들어준다.**
 > 
@@ -146,7 +151,8 @@ ex) 토큰이 발급된 후, 누군가 Payload의 정보 수정
 
 ## JWT의 동작 원리
 
-![스크린샷 2023-10-13 오후 3.45.19.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/179bc927-1d3c-40a6-9d85-061597f5271b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.45.19.png)
+
+<img width="530" alt="5" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/b8641a65-3b64-4136-bf3b-f82fb730c907">
 
 1. 사용자가 id와 password를 입력하여 로그인 요청을 한다.
 2. 서버는 회원 DB에 들어가 있는 사용자인지 확인을 한다.
