@@ -16,7 +16,8 @@
 - 특정 상태를 유지하지 않는 `무상태성(Stateless)`이 특징 → 요청과 응답 이후, 이전 데이터 휘발됨
 - ex) 우리가 웹 브라우저의 주소창에 https://www.naver.com을 입력하고 Enter 를 누르면 웹 클라이언트와 웹 서버 사이에 HTTP 연결이 맺어지고 웹 클라이언트는 웹 서버에 HTTP 요청 메시지를 보냅니다. 웹 서버는 요청에 따른 처리를 진행한 후에 그 결과를 웹 클라이언트에 HTTP 응답 메시지로 보냅니다. 이처럼 요청 메시지와 응답 메시지가 반복적으로 오가므로 우리는 웹을 사용할 수 있는 것입니다.
     
-    ![스크린샷 2023-10-10 오후 3.34.27.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/6ea3f87c-6b6e-449e-bf01-67b1fc744f8c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-10_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.34.27.png)
+    <img width="549" alt="1" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/cbd279b6-2b1e-4bf5-8ae4-a674fdd4e563">
+
     
 
 ## HTTP Method
@@ -67,8 +68,9 @@
 - HTTP 요청 헤더
     - HTTP 헤더 내 요청 헤더 (Request Header) 항목
     - 요청 헤더는 HTTP 요청 메시지 내에서만 나타나며 가장 방대하다.
+
+      <img width="664" alt="2" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/e88cbece-8deb-4b07-834c-8ecde0267957">
         
-        ![스크린샷 2023-10-10 오후 3.39.11.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/a02bd746-d23c-4236-ba88-131c1d888006/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-10_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.39.11.png)
         
 - HTTP 응답 헤더
     - HTTP 헤더 내 응답 헤더 (Response Header) 항목
@@ -86,29 +88,33 @@
 
 1. Elements panel
     
-    ![스크린샷 2023-10-10 오후 3.45.54.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/baae5791-5ca8-4ec7-a2cb-0d75f6845057/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-10_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.45.54.png)
+    <img width="697" alt="3" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/27432769-1392-4ad0-b8cd-9d5a9bb7b52a">
+
     
     - 개발자 도구의 기본 탭
     - 웹페이지의 구성(DOM), CSS 알 수 있다.
     - HTML 코드를 분석하고 실시간으로 수정할 수 있는 패널. 실시간으로 레이아웃과 디자인을 변경할 수 있다.
 2. Console panel
+
+   <img width="750" alt="4" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/7195a5e6-4185-4f8e-acf5-5af856af13a5">
     
-    ![스크린샷 2023-10-10 오후 3.50.00.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/a2009d34-baf5-4bf8-8ff2-3c4a04d5e715/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-10_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.50.00.png)
     
     - 컴퓨터의 키보드&마우스, 오락기의 조이스틱 같이 **동작하기 위한 패널**
     - 따라서 브라우저가 어떻게 동작하는지 조절하는 패널
     - 여기서 자바스크립트 코드를 즉시 실행할 수 있다.
     - **브라우저 콘솔창에 로그를 찍는다(`console.log()`)**고 표현
-3. Network panel ⭐️(개발자들이 프로젝트할 때 무조건 봐야하는 공간)
+4. Network panel ⭐️(개발자들이 프로젝트할 때 무조건 봐야하는 공간)
+
+   <img width="745" alt="5" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/f961cde6-793a-4c65-bb88-55551b20a788">
     
-    ![스크린샷 2023-10-10 오후 3.52.35.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/86618817-6eed-4403-9a2c-13cce0619c7a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-10_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.52.35.png)
     
     - 웹사이트에서 **통신하고 있는 모든 정보**를 목록으로 보여준다.
     - 리소스들이 예상대로 다운로드 되고 업데이트 되는지 확인할 때 사용한다.
     - 웹페이지와 서버 사이에서 데이터 흐름을 분석하고, 문제 발생 시 해결책을 찾도록 개발자를 돕는 역할을 한다.
-4. Application panel
+5. Application panel
     
-    ![스크린샷 2023-10-10 오후 3.54.53.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aeeca2cb-aa13-47dd-b9ce-d069c288dc24/310c415d-1344-487d-ad07-9014ac55bb0a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-10-10_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.54.53.png)
+    <img width="754" alt="6" src="https://github.com/Newsujin/42gg-onboarding-be-01/assets/104690611/b70c1d25-82e3-45eb-a17b-d48803d18c98">
+
     
     - 브라우저 저장소이다.
     - 3개의 브라우저 저장소(Storage) 존재
