@@ -86,27 +86,37 @@ Delete : 데이터 삭제(DELETE)
 
 1. URI는 동사보다는 명사를, 대문자보다는 소문자를 사용하여야 한다.
 
-> Bad Example http://khj93.com/Running/Good Example  http://khj93.com/run/
+> Bad Example http://khj93.com/Running/
+>
+> Good Example  http://khj93.com/run/
 > 
 
 2. 마지막에 슬래시 (/)를 포함하지 않는다.
 
-> Bad Example http://khj93.com/test/  Good Example  http://khj93.com/test
+> Bad Example http://khj93.com/test/
+>
+> Good Example  http://khj93.com/test
 > 
 
 3. 언더바 대신 하이폰을 사용한다.
 
-> Bad Example http://khj93.com/test_blogGood Example  http://khj93.com/test-blog
+> Bad Example http://khj93.com/test_blog
+>
+> Good Example  http://khj93.com/test-blog
 > 
 
 4. 파일확장자는 URI에 포함하지 않는다.
 
-> Bad Example http://khj93.com/photo.jpg  Good Example  http://khj93.com/photo
+> Bad Example http://khj93.com/photo.jpg
+>
+> Good Example  http://khj93.com/photo
 > 
 
 5. 행위를 포함하지 않는다.
 
-> Bad Example http://khj93.com/delete-post/1  Good Example  http://khj93.com/post/1
+> Bad Example http://khj93.com/delete-post/1
+>
+> Good Example  http://khj93.com/post/1
 > 
 
 ### RESTful이란?
