@@ -87,7 +87,8 @@ jwt는 statelessness라는 특성을 가지고 있는데 서버에 아예 아무
 
 ## MVC model
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/61213a83-ac0c-46a9-be76-bb67a1b53215/7a16774a-3f65-4ec8-8085-fed597be566d/Untitled.png)
+![image](https://github.com/ghyen/42gg-onboarding-be-01/assets/79272189/4ab5e985-4f5f-495d-a262-8dbeb50cac01)
+
 
 일종의 divide and conqurer이다 각 모듈로 나누고 독립시켜 유지보수성과 성능향상을 기대할 수 있다.
 
